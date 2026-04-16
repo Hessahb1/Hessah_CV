@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hessah Barjas | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="resume-container">
+        <header>
+            <div class="profile-info">
+                <h1>Hessah Barjas</h1>
+                <p class="tagline">Computer Science Student at Shaqra University</p>
+                <p class="specialty">Data Analyst | UI/UX Designer</p>
+            </div>
+            
+            <div class="contact-info">
+                <span>📞 0504631836</span>
+                <span>📧 <a href="mailto:lilib1413@gmail.com">lilib1413@gmail.com</a></span>
+                <span>🔗 <a href="https://www.linkedin.com/in/hessah-barjas-743775381" target="_blank">LinkedIn Profile</a></span>
+            </div>
+
+            <button id="mode-toggle">Change Visual Mode</button>
+        </header>
+
+        <main>
+            <section>
+                <h2>Professional Experience & Volunteering</h2>
+                <div class="entry">
+                    <h3>GDGoC Shaqra</h3>
+                    <p>Design Team Member</p>
+                </div>
+                <div class="entry">
+                    <h3>Gemini Academy Expo</h3>
+                    <p>Professional Organizer and Content Writer for the students' exhibition.</p>
+                </div>
+                <div class="entry">
+                    <h3>AI Bootcamp</h3>
+                    <p>Event Organizer and Coordinator for Artificial Intelligence training sessions.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Major Hackathons & Innovations</h2>
+                <div class="highlight-box">
+                    <h3>Judicial Intelligence | Qadhiti+ (قضيتي+)</h3>
+                    <p>A strategic AI-powered legal-tech platform developed for the Board of Grievances in partnership with Elm. <strong>Ranked among the Top 25 teams.</strong></p>
+                </div>
+            </section>
+
+            <section id="projects-section">
+                <h2>Academic Projects</h2>
+                <div class="project-card">
+                    <h3>Safe Bites</h3>
+                    <p>An innovative application designed to assist individuals with gluten intolerance and wheat allergies in finding safe dietary options and managing their health effectively.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Solar Tracking System (Solar Chaser)</h3>
+                    <p>An IoT-based system that enhances solar energy efficiency by 20%–40% by dynamically tracking the sun's path throughout the day.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Saudi Airlines Database System</h3>
+                    <p>A robust database architecture designed to manage flight logistics and passenger records with high integrity and performance.</p>
+                </div>
+            </section>
+
+            <section class="skills-container">
+                <div class="skill-column">
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li>Data Analysis & Visualization</li>
+                        <li>UI/UX Design (Figma/Adobe XD)</li>
+                        <li>Python & Java Development</li>
+                        <li>Oracle Database Management</li>
+                        <li>Frontend (HTML/CSS)</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h2>Soft Skills</h2>
+                    <ul>
+                        <li>Problem Solving & Critical Thinking</li>
+                        <li>Leadership & Teamwork</li>
+                        <li>Professional Content Writing</li>
+                        <li>Event Organization</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Licenses & Certifications</h2>
+                <div class="cert-list">
+                    <span>SDAIA: Fundamentals of AI</span>
+                    <span>SDAIA: Advanced AI Applications</span>
+                    <span>SDAIA (Takaa): Intelligent Robotics</span>
+                    <span>Cisco: Python Essentials</span>
+                    <span>Cisco: HTML Essentials</span>
+                    <span>Oracle: Database Certified</span>
+                    <span>Data Analysis Bootcamp Graduate</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // 1. Toggle Visual Mode (Interactivity)
+        const btn = document.getElementById('mode-toggle');
+        btn.addEventListener('click', function() {
+            document.body.classList.toggle('alt-theme');
+            if(document.body.classList.contains('alt-theme')) {
+                btn.innerText = "Normal Mode";
+            } else {
+                btn.innerText = "Special Mode";
+            }
+        });
+
+        // 2. Alert on Project Click (Interactivity)
+        const projects = document.querySelectorAll('.project-card');
+        projects.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.querySelector('h3').innerText;
+                alert("You are viewing details for: " + title);
+            });
+        });
+    </script>
+</body>
+</html>
