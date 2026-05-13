@@ -12,7 +12,7 @@
         <header>
             <div class="profile-info">
                 <h1>Hessah Barjas</h1>
-                <p class="tagline">Computer Science Student|Shaqra University</p>
+                <p class="tagline">Computer Science Student | Shaqra University</p>
                 <p class="specialty">Data Analyst | UI/UX Designer</p>
             </div>
             
@@ -22,7 +22,6 @@
                 <span>🔗 <a href="https://www.linkedin.com/in/hessah-barjas-743775381" target="_blank">LinkedIn</a></span>
             </div>
 
-            <button id="mode-toggle">Change Visual Mode</button>
         </header>
 
         <main>
@@ -40,6 +39,10 @@
                     <h3>AI Bootcamp</h3>
                     <p>Event Organizer and Coordinator for AI training sessions.</p>
                 </div>
+                <div class="entry">
+    <h3>Virtual Elm Club</h3>
+    <p>Technology & Project Team Member</p>
+</div>
             </section>
 
             <section>
@@ -93,7 +96,7 @@
                 <div class="cert-list">
                     <span>SDAIA: Fundamentals of AI</span>
                     <span>SDAIA: Advanced AI Applications</span>
-                    <span>IBM:AI Foundmentals</span>
+                    <span>IBM: AI Fundamentals</span>
                     <span>Cisco: Python Essentials</span>
                     <span>Cisco: HTML Essentials</span>
                     <span>Oracle: Database SQL</span>
@@ -104,18 +107,8 @@
     </div>
 
     <script>
-        // 1. Toggle Visual Mode (Interactivity)
-        const btn = document.getElementById('mode-toggle');
-        btn.addEventListener('click', function() {
-            document.body.classList.toggle('alt-theme');
-            if(document.body.classList.contains('alt-theme')) {
-                btn.innerText = "Normal Mode";
-            } else {
-                btn.innerText = "Special Mode";
-            }
-        });
 
-        // 2. Alert on Project Click (Interactivity)
+    alert("Welcome to Hessah's Portfolio!");
         const projects = document.querySelectorAll('.project-card');
         projects.forEach(card => {
             card.addEventListener('click', () => {
